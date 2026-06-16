@@ -1,5 +1,28 @@
 # Bible
 
+## Neovim shortcuts
+
+Project-local shortcuts from `.nvim.lua`:
+
+| Shortcut | Action |
+| --- | --- |
+| `<C-p>` | Find Bible files, including gitignored files |
+| `]C` | Next chapter |
+| `[C` | Previous chapter |
+| `]v` | Next verse |
+| `[v` | Previous verse |
+| `<leader>zr` | Toggle reading mode |
+| `<leader>zj` | Jump/pick Bible chapter |
+| `<leader>zs` | Search Bible text |
+| `<leader>zw` | Search word under cursor |
+| `<leader>zy` | Copy current verse with reference |
+| `<leader>zN` | Open chapter notes |
+| `<leader>zn` | Open verse note |
+| `<leader>zh` | Show footnotes |
+| `<leader>zt` | Show current verse in other translations |
+
+`<leader>` is Space in this Neovim config. To auto-load `.nvim.lua`, Neovim needs `set exrc secure` enabled; if prompted, run `:trust` once.
+
 Berean Standard Bible (BSB), generated as local Markdown for terminal/Vim reading.
 
 Run:
