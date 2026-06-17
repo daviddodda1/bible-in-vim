@@ -247,7 +247,7 @@ map("<leader>zy", function()
   if not ref or not ref.verse then return notify("Put cursor on a verse first", vim.log.levels.WARN) end
 
   local text = vim.api.nvim_get_current_line():gsub("^%*%*%d+%*%*%s*", "")
-  local copied = string.format("%s %d:%d — %s", ref.book, ref.chapter, ref.verse, text)
+  local copied = string.format("%s — %s %d:%d", text, ref.book, ref.chapter, ref.verse)
   vim.fn.setreg('"', copied)
   pcall(vim.fn.setreg, "+", copied)
   notify("Copied " .. ref.book .. " " .. ref.chapter .. ":" .. ref.verse)
