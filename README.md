@@ -1,5 +1,7 @@
 # Bible
 
+![Bible reading Neovim demo](bible-reading-demo-keys.gif)
+
 ## Neovim shortcuts
 
 Project-local shortcuts from `.nvim.lua`:
